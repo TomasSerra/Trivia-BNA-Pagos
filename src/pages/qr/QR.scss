@@ -1,0 +1,60 @@
+.qr-page{ 
+    height: 100dvh;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../../assets/imgs/general/fondo.png');
+    background-size: cover;
+    background-position: center;
+
+    .top-section{
+        margin: 4dvh 0;
+        display: flex;
+        justify-content: center;
+
+        img{
+            width: 20vw;
+        }
+    }
+
+    .title-section{
+        width: 90vw;
+        h1{
+            font-size: 10vw;
+            color: #ffffff;
+            text-align: center;
+            margin: 2dvh 0;
+            line-height: 1;
+        }
+    }
+
+    .qr-section{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 2dvh;
+
+        img{
+            width: 60vw;
+        }
+    }
+
+    .button{
+        width: 60vw;
+        height: 15vw;
+        background-color: #0062AD;
+        color: white;
+        font-size: 7vw;
+        border: none;
+        border-radius: 2dvh;
+        cursor: pointer;
+        font-family: 'Kievit Bold';
+        position: absolute;
+        bottom: 10dvh;
+    }
+}

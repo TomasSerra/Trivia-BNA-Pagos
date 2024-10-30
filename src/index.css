@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Kievit Bold';
+  src: url(./assets/fonts/Kievit\ Bold.otf);
+}
+
+body {
+  margin: 0;
+  font-family: 'Kievit Bold';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  touch-action: none;
+  user-select: none;
+}
+
+img {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

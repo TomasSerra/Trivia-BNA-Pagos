@@ -1,0 +1,127 @@
+.trivia-page{
+    height: 100dvh;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    .bottom-left{
+        position: absolute;
+        bottom: -18vw;
+        left: 0;
+        width: 35vw;
+        z-index: 0;
+    }
+
+    .top-right{
+        position: absolute;
+        top: -10vw;
+        right: 0;
+        width: 35vw;
+        z-index: 0;
+    }
+
+    .top-section{
+        margin-top: 2dvh;
+        margin-bottom: 3dvh;
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .question-section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        z-index: 1;
+
+        .time-container{
+            width: 90vw;
+            height: 4vw;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2dvh;
+            align-items: center;
+
+            .time-bar-container{
+                width: 100%;
+                height: 4vw;
+            }
+        }
+
+        .question-container{
+            color: white;
+            width: 90vw;
+            background-color: #005381;
+            height: fit-content;
+            min-height: 30vw;
+            border-radius: 2dvh;
+            padding: 2dvh;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: rgba(0, 0, 0, 0.226) 0 0.7dvh 20px;
+
+
+            h2{
+                font-size: 3dvh;
+                margin: 0;
+                width: 100%;
+                text-align: center;
+                font-family: 'Arial';
+            }
+        }
+    }
+
+    .options-section{
+        z-index: 1;
+        width: 100%;
+        height: 60dvh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .options-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            .option-button{
+                font-size: 2.5dvh;
+                border: none;
+                background: rgb(245, 245, 245);
+                width: 90vw;
+                height: fit-content;
+                padding: 1.3dvh 2vw;
+                margin: 2.5dvh 0;
+                color: black;
+                border-radius: 1.5dvh;
+                box-shadow: rgb(196, 196, 196) 0 0.8dvh;
+                //font-family: 'Kievit Bold';
+            }
+            
+            .option-button.correct-option{
+                background: rgb(70,165,25);
+                color: white;
+                box-shadow: rgb(60, 143, 22) 0 0.5dvh;
+                &:disabled{
+                    opacity: 1;
+                }
+            }
+
+            .option-button.incorrect-option{
+                background: rgb(164,29,29);
+                color: #ffffff;
+                box-shadow: rgb(128, 22, 22) 0 0.5dvh;
+                &:disabled{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
