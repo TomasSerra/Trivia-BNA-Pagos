@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react'
 import './End.scss'
 import Trophy from './../../assets/imgs/end/trophy.webp'
-import FondoTrofeo from './../../assets/imgs/end/fondo-trofeo.png'
 import Confetti from 'react-confetti'
 import {useWindowSize} from '@react-hook/window-size'
 import Logos from '../../assets/svgs/logos'
@@ -60,11 +59,10 @@ function End({correctQuestions, totalQuestions, goToNextPage, storageDataKey = "
       {((correctQuestions/totalQuestions) >= 0.5) ?
         <div className="prize-section">
           <img className='trophy' src={Trophy}/>
-          <img className='trophy-bg' src={FondoTrofeo}/>
         </div>
         :
         <div className="prize-section">
-          <h2>Seguí aprendiendo de Educación Financiera</h2>
+          <h2>Seguí aprendiendo sobre +Pagos</h2>
         </div>
       }
 		<BottomLeft className="bottom-left"/>

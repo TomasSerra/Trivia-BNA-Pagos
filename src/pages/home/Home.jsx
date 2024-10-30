@@ -20,7 +20,7 @@ function Home({goToNextPage, logo}) {
         </div>
         <div className="title-section">
 			<h1>¡Bienvenido!</h1>
-			<h2>Demostrá cuanto conoces de educación financiera</h2>
+			<h2>Demostrá cuánto conoces sobre +Pagos</h2>
         </div>
         <div className="button-section">
             <button onClick={goToNextPage}>Jugar</button>

@@ -4,7 +4,6 @@ import Home from './pages/home/Home';
 import Trivia from './pages/trivia/Trivia';
 import End from './pages/end/End';
 import Questions from './assets/data/questions.json';
-import Logo from './assets/imgs/general/logo.png';
 
 function App() {
   const [page, setPage] = useState(0);
@@ -32,9 +31,9 @@ function App() {
   }
   return (
     <>
-      {page === 0 && <Home goToNextPage={() => {setPage(1)}} logo={Logo}/>}
-      {page === 1 && <Trivia topic={topic} intervalTime={3} goToNextPage={() => {setPage(2)}} questions={Questions} setQuestionInfo={setQuestions} questionTime={400000} numberOfQuestions={3} logo={Logo}/>}
-      {page === 2 && <End goToNextPage={() => {setPage(0)}} totalQuestions={questions.total} correctQuestions={questions.correct} logo={Logo}/>}
+      {page === 0 && <Home goToNextPage={() => {setPage(1)}}/>}
+      {page === 1 && <Trivia topic={topic} intervalTime={3} goToNextPage={() => {setPage(2)}} questions={Questions} setQuestionInfo={setQuestions} questionTime={30} numberOfQuestions={3}/>}
+      {page === 2 && <End goToNextPage={() => {setPage(0)}} totalQuestions={questions.total} correctQuestions={questions.correct}/>}
     </>
   );
 }

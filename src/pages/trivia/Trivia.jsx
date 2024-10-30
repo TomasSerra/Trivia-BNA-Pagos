@@ -74,7 +74,7 @@ function Trivia({topic, goToNextPage, intervalTime, questions, setQuestionInfo, 
   }
 
   const sortOptions = (newOptions) => {
-    setActualCorrect(newOptions[newOptions.length - 1]);
+    setActualCorrect(newOptions[0]);
     const randomOptions = newOptions.sort(() => Math.random() - 0.5);
     setActualOptions(randomOptions);
   }

@@ -7,7 +7,7 @@
     background-color: #ffffff;
 
     .top-section{
-        margin: 4dvh 0;
+        margin: 7dvh 0;
         display: flex;
         justify-content: center;
     }
@@ -56,19 +56,8 @@
 
         .trophy{
             width: 45vw;
-            z-index: 2;
-        }
-
-        .trophy-bg{
-            width: 60vw;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            z-index: 1;
-            animation: spin 10s infinite linear;
+            z-index: 0;
+            animation: scale 3s infinite ease-in-out;
         }
 
         h2{
@@ -81,11 +70,14 @@
     }
 }
 
-@keyframes spin {
+@keyframes scale {
     0% {
-        transform: rotate(0deg);
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
     }
     100% {
-        transform: rotate(360deg);
+        transform: scale(1);
     }
 }
